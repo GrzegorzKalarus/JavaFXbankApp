@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserTablesController">
+    <children>
+        <VBox layoutX="32.0" layoutY="54.0" prefHeight="214.0" prefWidth="76.0" spacing="15.0">
+            <children>
+            <Label layoutX="10.0" layoutY="185.0" text="Reciever acc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="220.0" text="Money amm">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="108.0" layoutY="54.0" prefHeight="214.0" prefWidth="192.0" spacing="10.0">
+            <children>
+            <TextField fx:id="tfRecieverAccNr" layoutX="10.0" layoutY="185.0" />
+            <TextField fx:id="tfHowMuchTransfer" layoutX="10.0" layoutY="220.0" />
+              <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="85.0" text="Transfer" />
+            <Label fx:id="isTransferSuccess" prefHeight="21.0" prefWidth="117.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </VBox>
+        <Button fx:id="btnUpdate" layoutX="618.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="85.0" text="Update" />
+        <Button fx:id="btnDelete" layoutX="362.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="76.0" text="LogOut" AnchorPane.bottomAnchor="67.0" />
+      <Label fx:id="currentUserLabel" layoutX="34.0" layoutY="4.0" prefHeight="21.0" prefWidth="732.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="tfHowMuchCredit" layoutX="586.0" layoutY="54.0" />
+      <Label layoutX="630.0" layoutY="25.0" text="Get credit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="57.0" text="Amount">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="25.0" text="Send transfer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfInstalmentsNo" layoutX="586.0" layoutY="87.0" />
+      <Label layoutX="438.0" layoutY="90.0" text="Number of instalments">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="198.0" text="Deposit money">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDepositAmount" layoutX="326.0" layoutY="218.0" />
+      <Button fx:id="tfDepositBtn" layoutX="358.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="85.0" text="Deposit" />
+      <Label fx:id="isCreditTakeSuccess" layoutX="540.0" layoutY="178.0" prefHeight="19.0" prefWidth="183.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

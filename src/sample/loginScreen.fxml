@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #726DA8;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreenController">
+   <children>
+      <JFXTextField fx:id="username" focusColor="#a0d2db" labelFloat="true" layoutX="235.0" layoutY="271.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Username" style="-fx-text-fill: #A0D2DB;" unFocusColor="#251351">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#a0d2db" labelFloat="true" layoutX="235.0" layoutY="371.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Password" style="-fx-text-fill: #A0D2DB;" unFocusColor="#251351">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="login" layoutX="235.0" layoutY="478.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #A0D2DB;" text="Login" textFill="#3d363a" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="166.0" fitWidth="685.0" layoutX="58.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+         <effect>
+            <Reflection fraction="0.58" topOffset="-0.5" topOpacity="0.4" />
+         </effect>
+      </ImageView>
+      <JFXButton fx:id="register" layoutX="325.0" layoutY="569.0" mnemonicParsing="false" onAction="#notRegisteredYet" text="Not Registered Yet?" textFill="#251351" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="turnoff" layoutX="427.0" layoutY="478.0" mnemonicParsing="false" onAction="#turnOff" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #A0D2DB;" text="Cancel" textFill="#3d363a" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="wrongLogin" layoutX="385.0" layoutY="543.0" textAlignment="CENTER" textFill="#28cdd0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="180.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login.png" />
+         </image>
+         <effect>
+            <Reflection fraction="0.58" topOffset="-0.5" topOpacity="0.4" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
